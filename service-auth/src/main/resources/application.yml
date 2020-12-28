@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: service-auth
+  data:
+    mongodb:
+     uri: mongodb://clife_it_user:CLife_user_IT_$$@10.6.14.82:27017/db_it_gateway_config
+  redis:
+    host: 10.6.14.8
+    port: 28404
+    password: het@redis
+  datasource:
+    url: jdbc:mysql://10.6.14.1:3306/db_wode?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 9098
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#logging.level.org.springframework.security: DEBUG
+
